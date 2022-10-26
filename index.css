@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}    
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+  text-shadow: 0px 0px 20px #242424;
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.top {
+  display: flex;
+  justify-content: center
+}
+
+h1.time {
+  margin-left: 110px;
+  font-size: 5rem;
+}
+
+
+
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+
+div#weather > img {
+  width: 70px;
+}
+
+p.weather-city {
+  width: 100%;
+  margin: 0;
+  margin-top: -10px;
+  font-size: 1.2rem;
+}
+
+p.weather-temp {
+  margin: 0;
+  font-size: 1.7rem;
+  margin-left: -10px;
+}
+
+p#author {
+  font-size: 1rem;
+}
+
+
+input {
+  all: unset;
+  font: 16px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+.wrapper{
+  margin-top: 190px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_box{
+  width: 50%;
+  position: relative;
+}
+
+.search_box input[type="text"]{
+  width: 100%;
+  padding: 20px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.3);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+
+.fa-search{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  color: #fff;
+  font-size: 25px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+
+@media screen and (max-width: 425px){
+  .search_box{
+    width: 95%;
+  }
+}
+
+
+div#link {
+  margin: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+
+}
+
+img {
+
+  width: 220%;
+}
+
+
+
+.to-do{
+  position: absolute;
+  width: 20%;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+#newtask{
+  position: relative;
+  padding: 15px;
+}
+#newtask input{
+  width: 90%;
+  height: 50px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+#newtask input:focus{
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+
+#newtask button{
+  display: none;
+}
+
+
+#tasks{
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background: rgba(0,0,0,0.3);
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.task{
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+}
+.task span{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+.task button{
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 30px;
+  width: 85%;
+  border-radius: 5px;
+}
+
+

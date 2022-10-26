@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>PopsicK Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="search_box">
+          <form action="//www.google.com/search" target="_blank">
+            <input type="text" name="q" placeholder="Cosa cerchi Lidina?" />
+            <input type="hidden" name="sitesearch" value="" />
+          </form>
+        </div>
+      </div>
+
+      <div class="top">
+        <h1 id="time" class="time"></h1>
+        <div id="weather"></div>
+      </div>
+
+      <div class="to-do">
+        <div id="newtask">
+          <input id="stocazzo" type="text" placeholder="Lidina To do" />
+
+          <button id="push">+</button>
+        </div>
+        <div id="tasks"></div>
+      </div>
+
+      <div id="link">
+        <button
+          class="btn btn-success"
+          onclick=" window.open('http://www.facebook.com/','_blank')"
+        >
+          <img src="./img/facebook.png" />
+        </button>
+        <button
+          class="btn btn-success"
+          onclick=" window.open('http://www.youtube.com/','_blank')"
+        >
+          <img src="./img/youtube.png" />
+        </button>
+  
+        <button
+        class="btn btn-success"
+        onclick=" window.open('https://web.whatsapp.com/','_blank')"
+      >
+        <img src="./img/whatsapp.png" />
+      </button>
+
+        <button
+          class="btn btn-success"
+          onclick=" window.open('http://www.justeat.it/','_blank')"
+        >
+          <img src="./img/justeat.png" />
+        </button>
+        <button
+          class="btn btn-success"
+          onclick=" window.open('http://www.amazon.it/','_blank')"
+        >
+          <img src="./img/amazon.png" />
+        </button>
+
+        <button
+        class="btn btn-success"
+        onclick=" window.open('http://www.paypal.com/it/home','_blank')"
+      >
+        <img src="./img/paypal.png" />
+      </button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
