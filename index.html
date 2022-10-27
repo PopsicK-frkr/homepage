@@ -2,14 +2,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
-    <title>PopsicK Dashboard</title>
+    <title>🌈 PopsicK Dashboard</title>
   </head>
   <body>
     <main>
       <div class="wrapper">
         <div class="search_box">
           <form action="//www.google.com/search" target="_blank">
-            <input type="text" name="q" placeholder="Cosa cerchi Lidina?" />
+            <input type="text" name="q" placeholder="Cosa cerchi Lidina? 😘" />
             <input type="hidden" name="sitesearch" value="" />
           </form>
         </div>
@@ -20,13 +20,17 @@
         <div id="weather"></div>
       </div>
 
-      <div class="to-do">
-        <div id="newtask">
-          <input id="stocazzo" type="text" placeholder="Lidina To do" />
-
-          <button id="push">+</button>
-        </div>
-        <div id="tasks"></div>
+      <div class="container">
+        <div class="empty-state"></div>
+        <form class="js-form">
+          <input
+            autofocus
+            type="text"
+            placeholder="            Lidina To do List ❤️"
+            class="js-todo-input"
+          />
+        </form>
+        <p class="todo-list js-todo-list"></p>
       </div>
 
       <div id="link">
@@ -42,13 +46,13 @@
         >
           <img src="./img/youtube.png" />
         </button>
-  
+
         <button
-        class="btn btn-success"
-        onclick=" window.open('https://web.whatsapp.com/','_blank')"
-      >
-        <img src="./img/whatsapp.png" />
-      </button>
+          class="btn btn-success"
+          onclick=" window.open('https://web.whatsapp.com/','_blank')"
+        >
+          <img src="./img/whatsapp.png" />
+        </button>
 
         <button
           class="btn btn-success"
@@ -64,11 +68,11 @@
         </button>
 
         <button
-        class="btn btn-success"
-        onclick=" window.open('http://www.paypal.com/it/home','_blank')"
-      >
-        <img src="./img/paypal.png" />
-      </button>
+          class="btn btn-success"
+          onclick=" window.open('http://www.paypal.com/it/home','_blank')"
+        >
+          <img src="./img/paypal.png" />
+        </button>
       </div>
     </main>
     <script src="index.js"></script>
