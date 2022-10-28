@@ -260,15 +260,14 @@ input[type="checkbox"] {
 }
 
 .sfondo {
-  position: relative;
-  transform: translate(0%, -950%);
   margin-top: auto;
+  position: relative;
+  transform: translate(0%, 0%);
   background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #fff;
   border-radius: 10px;
   font-size: 14px;
-  width: 140px;
-  height: 35px;
+  width: 100px;
+  height: 20px;
 }
 
 .boo {
@@ -288,6 +287,8 @@ input[type="checkbox"] {
 }
 
 #due {
-  display: flex;
-  justify-content: end;
+  top: 10px;
+  right: 12px;
+  z-index: 3;
+  position: absolute;
 }
