@@ -5,6 +5,15 @@
 //██║     ╚██████╔╝██║     ███████║██║╚██████╗██║  ██╗
 //╚═╝      ╚═════╝ ╚═╝     ╚══════╝╚═╝ ╚═════╝╚═╝  ╚═╝
 
+
+const searchBar = document.getElementById("search-bar")
+
+
+
+
+
+
+
 fetch(
   "https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=cat"
 )
@@ -27,6 +36,25 @@ function getCurrentTime() {
 }
 
 setInterval(getCurrentTime, 1000);
+
+
+
+
+
+document.getElementById("search-btn").addEventListener("click",(e)=>{
+  e.preventDefault()
+  fetch(`https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=${searchBar.value}`)
+    .then((res) => res.json())
+    .then((data) => {
+    document.body.style.backgroundImage = `url(${data.urls.regular})`;
+  })
+})
+
+
+
+
+
+
 
 navigator.geolocation.getCurrentPosition((position) => {
   fetch(
@@ -146,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// click quando premo enter
+
 
 let btn = document.getElementById("push");
 
@@ -157,3 +185,21 @@ document.addEventListener("keypress", (event) => {
     document.getElementById("stocazzo").value = "";
   }
 });
+
+
+
+
+window.addEventListener("mousemove", function (e) {
+	var x = e.clientX,
+		y = e.clientY;
+
+	document.querySelector(".boo").style.left = x + "px";
+	document.querySelector(".boo").style.top = y + "px";
+});
+
+window.addEventListener('click', function() {
+	document.querySelector('p').classList.add('wiggle')
+	document.querySelector('p').onanimationend = function() {
+		this.classList.remove('wiggle')
+	}
+})

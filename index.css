@@ -116,10 +116,12 @@ svg {
   outline: none;
 }
 
+
+
 .fa-search {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   right: 25px;
   color: #fff;
   font-size: 16px;
@@ -249,4 +251,49 @@ input[type="checkbox"] {
 
 .todo-list:empty + .empty-state {
   display: flex;
+}
+
+#wall-btn{
+  border: 3px solid red;
+}
+
+#search-btn{
+  display: none;
+}
+
+.sfondo{
+  margin-left: 1405px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  position: absolute;
+  width: 140px;
+  height: 35px;
+}
+
+
+.boo {
+  cursor:auto;
+	position: absolute;
+	font-size: 7rem;
+	margin: auto;
+	transform: translate(-120%, -120%);
+	opacity: 0.25;
+	filter: blur(2px) drop-shadow(0 0 25px white);
+	animation: boo 3s linear infinite;
+}
+@keyframes boo {
+	50% {
+		opacity: 0.04;
+	}
+}
+
+
+.firma{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 680px;
+  margin-left: 1400px;
 }
