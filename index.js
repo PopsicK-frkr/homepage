@@ -208,7 +208,7 @@ options.style.display = "none";
 function setAlarm() {
   let ms = new Date().setHours(0, 0, 0, 0) + time.valueAsNumber;
   if (isNaN(ms)) {
-    alert("You've got to give me something to work with here, friend.");
+    alert("Fattona inserisci un orario");
     return;
   }
   let alarm = new Date(ms);
@@ -216,20 +216,17 @@ function setAlarm() {
   let differenceInMs = alarm.getTime() - dt;
 
   if (differenceInMs < 0) {
-    alert(
-      "It looks like that's a date from the past! Are you a time traveler?!"
-    );
+    alert("Ora sai anche viaggiare nel tempo? Dai metti un orario valido!");
     return;
   }
   alarmTimer = setTimeout(initAlarm, differenceInMs);
-  alarmButton.innerText = "Cancel Alarm";
-  alarmButton.setAttribute("onclick", "cancelAlarm(this);");
+
   options.style.display = "";
 }
 
 function cancelAlarm() {
   clearTimeout(alarmTimer);
-  alarmButton.innerText = "Set Alarm";
+
   alarmButton.setAttribute("onclick", "setAlarm(this);");
   options.style.display = "none";
 }
@@ -248,7 +245,7 @@ function stopAlarm() {
 
 function snooze() {
   stopAlarm();
-  setTimeout(initAlarm, 5000);
+  setTimeout(initAlarm, 5 * 60 * 1000);
 }
 
 alarmButton.addEventListener("click", setAlarm, false);
